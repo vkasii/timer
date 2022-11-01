@@ -1,0 +1,92 @@
+@import url('./fonts/fonts.css');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: 'Digital';
+   color: rgb(25 169 238);
+   text-transform: uppercase;
+   background: rgb(0, 0, 0);
+}
+
+.flex {
+   display: flex;
+   justify-content: space-between;
+}
+.box {
+   height: 30vh;
+   padding: 30px 0;
+   text-align: center;
+   background: rgb(9, 0, 24);
+   margin-bottom: 5vh;
+   color: rgb(25, 170, 238);
+   border: 1px solid rgb(142 142 202);
+}
+.box:last-child {
+   margin-bottom: 0;
+}
+.row{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.date-box {
+   font-size: 30px;
+}
+.time-box {
+   font-size: 120px;
+}
+.stopwatch__screen {
+   font-size: 80px;
+}
+.sw-width {
+   display: inline-block;
+   width: 75px;
+}
+.button {
+   font-family: 'Digital';
+   color: rgb(25 169 238);
+   padding: 5px 15px;
+   border: 1px solid rgb(25, 169, 238, 0.4);
+   border-radius: 3px;
+   background: rgb(9, 0, 24);
+   cursor: pointer;
+}
+.button:focus-within {
+   border: 1px solid rgb(0, 174, 255);
+
+}
+.textarea {
+   width: 25vw;
+   height: 20vh;
+   margin: auto;
+   color: rgb(25 169 238);
+   background: rgb(9, 0, 24);
+   border: 1px solid rgb(25, 169, 238, 0.4);
+   border-radius: 3px;
+   resize: none;
+   overflow: scroll;
+}
+.textarea::-webkit-scrollbar {
+   display: none;
+}
+.textarea:focus {
+   outline: 1px solid rgb(0, 174, 255);
+
+}
+.text-center {
+   width: 50%;
+}
+.timer__minutes,
+.timer__screen {
+   font-size: 100px;
+}
+.timer-minutes,
+.timer-seconds {
+   width: 90px;
+   display: inline-block;
+}

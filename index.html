@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <div class="container">
+      <div class="date-time-box box row">
+         <div class="date-box"></div>
+         <div class="time-box"></div>
+      </div>
+      <div class="stopwatch box flex">
+         <div class="stopwatch__menu text-center row">
+            <div class="stopwatch__screen">
+               <span class="hours sw-width">00</span>:
+               <span class="minutes sw-width">00</span>:
+               <span class="seconds sw-width">00</span>:
+               <span class="ms sw-width">00</span>
+            </div>
+            <form class="stopwatch__buttons">
+               <input type="button"  class="button stopwatch__btn-start" value="start">
+               <input type="button" class="button stopwatch__btn-loop" value="loop"> 
+               <input type="button" class="button stopwatch__btn-stop" value="stop"> 
+               <input type="button"  class="button stopwatch__btn-reset" value="reset">
+            </form>
+         </div>
+         <div class="stopwatch__screenshot text-center">
+            <div class="textarea"></div>
+         </div>
+      </div>
+      <div class="timer box flex">
+         <div class="timer__settings text-center row">
+            <div class="timer__minutes"></div>
+            <p>minutes</p>
+            <form class="timer__buttons">
+               <input type="button" class="button timer__plus-minute" value="+">
+               <input type="button" class="button timer__minus-minute" value="-">
+            </form>
+         </div>
+
+         <div class="timer__begin text-center row">
+            <div class="timer__screen">
+               <span class="timer-minutes"></span>:
+               <span class="timer-seconds"></span>
+            </div>
+            <form  class="timer__buttons">
+               <input type="button" class="button timer__btn-start" value="start">
+               <input type="button" class="button timer__btn-stop" value="stop">
+               <input type="button" class="button timer__btn-reset" value="reset">
+            </form>
+         </div>
+      </div>
+   </div>
+   <script src="./js/script.js"></script>
+</body>
+</html>
